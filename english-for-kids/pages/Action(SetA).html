@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+</head>
+<body id="body">
+  <div id = "marks1" class="img"></div>
+  <h1 id="time">Количество ошибок: <div id="min"></div> </h1>
+  <header>
+
+    <nav class="nav">
+  <div class="menu-bar">
+  <span></span>
+  </div>
+  <div class="menu" id="menu">
+  <ul>
+  <li><a href="../index.html">Main page</a></li>
+  <li><a href="Action(SetA).html" class="active">Action (Set A)</a></li>
+  <li><a href="Action(SetB).html">Action (Set B)</a></li>
+  <li><a href="Action(SetC).html">Action (Set C)</a></li>
+  <li><a href="Adjective.html">Adjective</a></li>
+  <li><a href="Animal(setA).html">Animal (set A)</a></li>
+  <li><a href="Animal(setB).html">Animal (set B)</a></li>
+  <li><a href="Clothes.html">Clothes</a></li>
+  <li><a href="Emotion.html">Emotion</a></li>
+  <li><a href="HackerScope.html">Hacker scope</a></li>
+  </ul>
+  </div>
+  </nav>
+
+      <label class="toggleSwitch large" onclick="set1();">
+            <input id="but" type="checkbox" checked />
+            <span>
+                <span>PLAY</span>
+                <span>TRAIN</span>
+            </span>
+            <a></a>
+        </label>
+  </header>
+
+<div id = "marks" class="marks"></div>
+
+
+<main id = "main">
+  <div id="rotate">
+    <ul id = "pag">
+
+<li>
+<audio id="sound1" src="../audio/cry.mp3"></audio>
+<div id="front1" class="card_secondpage"></span>
+<span id="audio1"><div  class="card__face front" style="background-image: url(../img/cry.jpg);"><div class="card_head">cry</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/cry.jpg);"><div class="card_head">плакать</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound2" src="../audio/dance.mp3"></audio>
+<div id="front2" class="card_secondpage">
+<span  id="audio2"><div class="card__face front" style="background-image: url(../img/dance.jpg);"><div class="card_head">dance</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/dance.jpg);"><div class="card_head">танцевать</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound3" src="../audio/dive.mp3"></audio>
+<div  id="front3" class="card_secondpage">
+<span id="audio3"><div class="card__face front" style="background-image: url(../img/dive.jpg);"><div class="card_head">dive</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/dive.jpg);"><div class="card_head">нырять</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound4" src="../audio/draw.mp3"></audio>
+<div id="front4" class="card_secondpage">
+<span id="audio4"><div class="card__face front" style="background-image: url(../img/draw.jpg);"><div class="card_head">draw</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/draw.jpg);"><div class="card_head">рисовать</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound5" src="../audio/fish.mp3"></audio>
+<div id="front5" class="card_secondpage">
+<span id="audio5"><div class="card__face front" style="background-image: url(../img/fish.jpg);"><div class="card_head">fish</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/fish.jpg);"><div class="card_head">ловить рыбу</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound6" src="../audio/fly.mp3"></audio>
+<div id="front6" class="card_secondpage">
+<span id="audio6"><div class="card__face front" style="background-image: url(../img/fly.jpg);"><div class="card_head">fly</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/fly.jpg);"><div class="card_head">летать</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound7" src="../audio/hug.mp3"></audio>
+<div id="front7" class="card_secondpage">
+<span id="audio7"><div class="card__face front" style="background-image: url(../img/hug.jpg);"><div class="card_head">hug</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/hug.jpg);"><div class="card_head">обнимать</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+<li>
+<audio id="sound8" src="../audio/jump.mp3"></audio>
+<div id="front8" class="card_secondpage">
+<span id="audio8"><div class="card__face front" style="background-image: url(../img/jump.jpg);"><div class="card_head">jump</div></div></span>
+<div  class="card__face back" style="background-image: url(../img/jump.jpg);"><div class="card_head">прыгать</div></div>
+<div class="rotate"/>
+</div>
+</li>
+
+</ul>
+</div>
+</main>
+<button id = "game" onclick="game();" class="button">Start game</button>
+<button id = "g" onclick="g();" class="button1 repeat"></button>
+<audio id="mus1" src="../audio/correct.mp3"></audio>
+<audio id="mus2" src="../audio/error.mp3"></audio>
+<audio id="success" src="../audio/success.mp3"></audio>
+<audio id="fail" src="../audio/failure.mp3"></audio>
+<script src="../scripts/save.js"></script>
+<script src="../scripts/game.js"></script>
+<script src="../scripts/switch.js"></script>
+<script src="../scripts/card.js"></script>
+<script src="../scripts/sound.js"></script>
+</body>
+</html>
